@@ -26,4 +26,14 @@ body {
   padding: 0.8rem;
   text-align: center;
 }
+
+.app #app__searchBar--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.app #app__searchBar--content button {
+  margin-left: 2rem;
+}
 /*# sourceMappingURL=main.css.map */

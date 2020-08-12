@@ -27,5 +27,13 @@ body {
       padding: 0.8rem;
       text-align: center;
     }
+
+    &--content {
+      display: flex;
+
+      button {
+        margin-left: 2rem;
+      }
+    }
   }
 }
