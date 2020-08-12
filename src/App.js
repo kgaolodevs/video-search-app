@@ -6,7 +6,7 @@ class App extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="ui container app">
         <SearchBar />
       </div>
     );
