@@ -9,7 +9,7 @@ const data = {
 };
 
 class App extends Component {
-  state = { videos: [] };
+  state = { videos: [], selectedVideo: null };
 
   onTermSubmit = async (term) => {
     const response = await axios.get(
@@ -27,11 +27,18 @@ class App extends Component {
     this.setState({ videos: response.data.items });
   };
 
+  onVideoSelect = (video) => {
+    this.setState({ selectedVideo: video });
+  };
+
   render() {
     return (
       <div className="ui container app">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <VideoList videos={this.state.videos} />
+        <VideoList
+          videos={this.state.videos}
+          onVideoSelect={this.onVideoSelect}
+        />
       </div>
     );
   }
