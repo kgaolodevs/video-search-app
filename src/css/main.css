@@ -45,7 +45,7 @@ body {
 }
 
 .app #app__videoList {
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .app #app__videoList--videoComponent {
@@ -61,14 +61,19 @@ body {
 
 .app #app__videoList--videoComponent #app__videoList--videoTitle {
   color: #fff;
+  font-size: 1rem;
 }
 
 .app #app__videoList--videoComponent img {
-  max-width: 200px;
+  min-width: 180px;
   border-radius: 0.5rem;
   border: #fff 3px solid;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
   -webkit-box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
           box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.app #app__videoDetail {
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=main.css.map */
