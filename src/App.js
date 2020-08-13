@@ -3,6 +3,7 @@ import "./css/main.css";
 import axios from "axios";
 import SearchBar from "./components/SearchBar";
 import VideoList from "./components/VideoList";
+import VideoDetail from "./components/VideoDetail";
 
 const data = {
   KEY: "AIzaSyC9t-cOsc42wy6nTv7zOAtPnTE_Av2IAVA",
@@ -35,6 +36,7 @@ class App extends Component {
     return (
       <div className="ui container app">
         <SearchBar onFormSubmit={this.onTermSubmit} />
+        <VideoDetail video={this.state.selectedVideo} />
         <VideoList
           videos={this.state.videos}
           onVideoSelect={this.onVideoSelect}
