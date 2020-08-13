@@ -9,7 +9,6 @@
 
 body {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff4b2b), to(#ff416c));
   background: linear-gradient(#ff4b2b, #ff416c);
   color: #fff;

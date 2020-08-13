@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import "./css/main.css";
-import SearchBar from "./components/SearchBar";
 import axios from "axios";
+import SearchBar from "./components/SearchBar";
+import VideoList from "./components/VideoList";
 
 const data = {
-  KEY: "AIzaSyDCiFgrbUjlPaADlWaBUR5bes48IeZdgDE",
+  KEY: "AIzaSyC9t-cOsc42wy6nTv7zOAtPnTE_Av2IAVA",
 };
 
 class App extends Component {
@@ -30,7 +31,7 @@ class App extends Component {
     return (
       <div className="ui container app">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        {/* Videos found: {this.state.videos.length} */}
+        <VideoList videos={this.state.videos} />
       </div>
     );
   }
