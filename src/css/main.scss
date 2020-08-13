@@ -9,13 +9,17 @@
 
 body {
   font-family: "Poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  height: fit-content;
+}
+
+#root {
   background: linear-gradient(#ff4b2b, #ff416c);
-  color: #fff;
+  min-height: 100vh;
+  padding-top: 3rem;
 }
 
 .app {
   #app__searchBar {
-    margin-top: 3rem;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
       0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
       0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
@@ -25,6 +29,7 @@ body {
       font-size: 1.55rem;
       padding: 0.8rem;
       text-align: center;
+      color: #25242a;
     }
 
     &--content {
@@ -32,6 +37,26 @@ body {
 
       button {
         margin-left: 2rem;
+      }
+    }
+  }
+
+  #app__videoList {
+    margin-top: 3rem;
+
+    &--videoComponent {
+      display: flex;
+      align-items: center;
+      padding: 2rem 0;
+      cursor: pointer;
+
+      #app__videoList--videoTitle {
+        color: #fff;
+      }
+
+      img {
+        max-width: 200px;
+        border-radius: 0.5rem;
       }
     }
   }
