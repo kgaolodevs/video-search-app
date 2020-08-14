@@ -6,7 +6,7 @@ import VideoList from "./components/VideoList";
 import VideoDetail from "./components/VideoDetail";
 
 const data = {
-  KEY: "AIzaSyC9t-cOsc42wy6nTv7zOAtPnTE_Av2IAVA",
+  KEY: "AIzaSyD21xBEhAk6VbSRWbmyowmjya15EQXKbv8",
 };
 
 class App extends Component {
@@ -43,18 +43,12 @@ class App extends Component {
     return (
       <div className="ui container app">
         <SearchBar onFormSubmit={this.onTermSubmit} />
-        <div className="ui grid">
-          <div className="ui row">
-            <div className="eleven wide column">
-              <VideoDetail video={this.state.selectedVideo} />
-            </div>
-            <div className="five wide column">
-              <VideoList
-                videos={this.state.videos}
-                onVideoSelect={this.onVideoSelect}
-              />
-            </div>
-          </div>
+        <div className="app__main">
+          <VideoDetail video={this.state.selectedVideo} />
+          <VideoList
+            videos={this.state.videos}
+            onVideoSelect={this.onVideoSelect}
+          />
         </div>
       </div>
     );

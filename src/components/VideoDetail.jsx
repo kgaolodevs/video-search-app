@@ -8,8 +8,8 @@ const VideoDetail = ({ video }) => {
   const videoSource = `https://www.youtube.com/embed/${video.id.videoId}`;
 
   return (
-    <div>
-      <div className="ui embed" id="app__videoDetail">
+    <div id="app__videoDetail">
+      <div className="ui embed">
         <iframe src={videoSource} title="video player" />
       </div>
       <div className="ui segment">
